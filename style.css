@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("https://cdn.pixabay.com/photo/2017/04/05/04/44/background-2203989_1280.jpg");
+}
+.form-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 2px solid white;
+    box-shadow: 2px 2px 8px rgb(230, 234, 235);
+    background-image: url("https://cdn.pixabay.com/photo/2017/04/05/04/44/background-2203989_1280.jpg");
+    padding:10px 100px 10px 100px;
+    
+   
+   
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.label {
+    font-weight: bold;
+    color: rgb(3, 27, 37);
+    font-size: 19px;
+    text-shadow: 4px 4px 10px rgb(230, 234, 235);
+}
+
+.fields, .select {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#submit{
+    background-color:rgb(3, 27, 37);
+    color: white;
+    width: 189px;
+    font-size: 19px;
+    text-shadow: 2px 2px 4px rgb(59, 111, 124);
+}
+
+    
