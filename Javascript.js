@@ -91,6 +91,46 @@ function Prime(num) {
   return true;
 }
 
+function reverseWord(){
+var word=document.getElementById("reverseText").value;
+
+  document.getElementById("reverse").innerHTML=swapNumbers(word) ;
+}
+
+function swapNumbers(word) {
+  const letters = []; 
+  const numbers = []; 
+
+  //separate the letters from numbers
+  for (let i = 0; i < word.length; i++) {
+    if (isNaN(parseInt(word[i]))) {
+      letters.push(word[i]);
+    } else {
+      numbers.push(word[i]);
+    }
+  }
+  numbers.reverse();
+
+  let result = ''; 
+  let j = 0; // j indicates the numbers' index
+
+  for (let i = 0; i < word.length; i++) {
+    if (isNaN(parseInt(word[i]))) {
+      result += letters[i - j]; 
+    } else {
+      result += numbers[j]; 
+      j++; 
+    }
+  }
+
+  return result;
+}
+
+
+
+
+
+
 
 
 
