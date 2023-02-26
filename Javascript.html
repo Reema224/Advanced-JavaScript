@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <script defer src="Javascript.js"></script> -->
+    <script defer src="Javascript.js"></script>
 </head>
 <body>
     <div class="page2Container">
@@ -16,7 +16,32 @@
         <div>
             <h1 class="title" >Sorted entered numbers using merge sort</h1>
         </div>
-    <div id="numbers"></div>
+    <div id="numbers" class="result"></div>
+    <div>
+        <img class="img2" src="./images/Palindrome.PNG" alt="merge">
+    </div>
+    <div>
+        <h1 class="title">Enter a word and check if it is a palindrome</h1>
+    </div>
+    <div>
+        <label class="label" for="word">Enter a word:</label>
+        <input class="fields" type="text" id="word" name="word">
+        <button id="submit" class="fields" onclick="checkPalindrome()">Check</button>
+    </div>
+    <div id="palindrome" class="result"></div>
+    
+    <div>
+        <h1 class="title">Enter your and check if it is a prime number</h1>
+    </div>
+    <div>
+        <label class="label" for="word">Enter year of birth:</label>
+        <input class="fields" type="text" id="age" name="age">
+        <button id="submit" class="fields" onclick="checkPrime()">Check</button>
+    </div>
+    <div id="prime" class="result"></div>
+
+    
+    
     </div>
 </body>
 </html>
