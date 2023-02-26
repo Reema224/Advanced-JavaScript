@@ -126,6 +126,28 @@ function swapNumbers(word) {
   return result;
 }
 
+function moveConsonant(){
+var word=document.getElementById("moveConsonant").value;
+
+  document.getElementById("consonant").innerHTML= Consonant(word) ;
+}
+function Consonant(word) {
+  const consonantsRegex = /^[bcdfghjklmnpqrstvwxyz]+/i;
+
+  let result = word.match(consonantsRegex);
+  let consonants;
+  if (result) {
+    consonants = result[0];
+  } else {
+    consonants = '';
+  }
+
+  let newWord = word.slice(consonants.length) + consonants;
+  newWord += "ay";
+
+  return newWord;
+}
+
 
 
 
