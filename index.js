@@ -28,3 +28,17 @@ function validateForm(){
 }
 
 
+let background = document.getElementById('registerForm');
+let colors = ['BlueViolet', 'Coral', 'HotPink','Gold', 'LightSkyBlue', 'MediumSpringGreen', 'Turquoise'];
+let index = 0;
+
+function animateBackground() {
+  index = (index + 1) % colors.length;
+  background.style.backgroundColor = colors[index];
+  setTimeout(animateBackground, 1000);
+}
+
+animateBackground();
+
+let element = document.getElementById('title1');
+element.animate([{ transform: 'rotate(0deg)' }, { transform: 'rotate(360deg)' }], { duration: 2000, iterations: Infinity });

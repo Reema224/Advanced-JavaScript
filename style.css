@@ -5,9 +5,11 @@ body{
 }
 .form-position{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 600px;
+    
     
 
 }
@@ -15,14 +17,13 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 20px;
     align-items: flex-start;
     border: 2px solid white;
     box-shadow: 2px 2px 8px rgb(230, 234, 235);
-    background-image: url("https://cdn.pixabay.com/photo/2017/04/05/04/44/background-2203989_1280.jpg");
+    background-color: rgb(129, 189, 234);
     padding:10px 100px 10px 100px;
     
-   
-   
 }
 .input {
     display: flex;

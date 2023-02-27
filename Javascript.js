@@ -148,7 +148,27 @@ function Consonant(word) {
   return newWord;
 }
 
-
+function getIpAddress() {
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://api.ipify.org');
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      const ipAddress = xhr.responseText;
+      const digits = ipAddress.match(/\d/g);
+      let sum = 0;
+      for (let i = 0; i < digits.length; i++) {
+        if (digits[i] % 2 === 0) {
+          sum += parseInt(digits[i]);
+        }
+      }
+      document.getElementById('ip-address').textContent = `${ipAddress}`;
+      document.getElementById('even-digits-sum').textContent = `Sum of even digits: ${sum}`;
+    } else {
+      console.log('Unable to retrieve IP address');
+    }
+  };
+  xhr.send();
+}
 
 
 
