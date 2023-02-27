@@ -9,15 +9,23 @@
     <script defer src="Javascript.js"></script>
 </head>
 <body>
-    <div class="page2Container">
-        <div>
-            <img class="img" src="./images/mergeSort.PNG" alt="merge">
-        </div>
-        <div>
-            <h1 class="title" >Sorted entered numbers using merge sort</h1>
-        </div>
-    <div id="numbers" class="result"></div>
+ <div class="page2Container">
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#home">My Javascript Journey!</a></li>
+            </ul>
+        </nav>
+    </div>
+   
+    <div id="section1" onscroll="Scroll()">
+        <img class="img" src="./images/mergeSort.PNG" alt="merge">
+    </div>
     <div>
+        <h1 class="title" >Sorted entered numbers using merge sort</h1>
+    </div>
+    <div id="numbers" class="result"></div>
+    <div id="section2">
         <img class="img2" src="./images/Palindrome.PNG" alt="merge">
     </div>
     <div>
@@ -29,7 +37,7 @@
         <button id="submit" class="fields" onclick="checkPalindrome()">Check</button>
     </div>
     <div id="palindrome" class="result"></div>
-    <div>
+    <div id="section3">
         <img class="img3" src="./images/Prime.PNG" alt="merge">
     </div>
     <div>
@@ -42,7 +50,7 @@
     </div>
     <div id="prime" class="result"></div>
 
-    <div>
+    <div id="section4">
         <h1 class="title">Reverse a word that contain letters and numbers</h1>
     </div>
     <div>
@@ -52,7 +60,7 @@
     </div>
     <div id="reverse" class="result"></div>
 
-    <div>
+    <div id="section5">
         <h1 class="title">Move the first set of consonants (one or more) to the end of the word.</h1>
     </div>
     <div>
@@ -62,16 +70,24 @@
     </div>
     <div id="consonant" class="result"></div>
    
-    <div>
+    <div id="section6">
         <button id="submit" class="fields" onclick="getIpAddress()">Get IP Address</button>
     </div>
     <div class="result" id="ip-address"></div>
     <div class="result" id="even-digits-sum"></div>
 
+    <div>
+        <!-- <button id="submit" class="fields" onclick="DisplayLocation()">DisplayLocation</button> -->
+        <button onclick="topFunction()" id="submit" class="fields" title="Go to top">Go to Top</button>
+        <a href="form.html" style="text-align: center;">
+            <button id="submit" class="fields" title="Next">Next</button>
+        </a>
     </div>
-
+    </div>
     
     
-    </div>
+    
+    
+ </div>
 </body>
 </html>

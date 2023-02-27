@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="form.js"></script>
+</head>
+<body>
+    
+        <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#home">My Javascript Journey!</a></li>
+            </ul>
+        </nav>
+            </div>
+        <div class="form-position">
+        <div id="title1" class="label">
+            <h2>Course Form</h2>
+        </div>
+            <form id="CourseForm" class="container2">
+                <div class="input">
+                    <label class="label" for="Name">Course Name:</label>
+                    <input class="fields" type="text" id="name" placeholder="name">
+                </div>
+                <div class="input">
+                    <label class="label" for="email">Course code:</label>
+                    <input class="fields" type="text" id="code" placeholder="code">
+                </div>
+                <div class="input">
+                    <label class="label" for="instructor">Instructor:</label>
+                    <input class="fields" type="text" id="instructor" placeholder="instructor">
+                </div>
+                <div class="input">
+                    <label class="label" for="semester">Semester:</label>
+                    <input class="fields" type="text" id="semester" placeholder="semester">
+                </div>
+                <div class="input">
+                <button type="button" id="submit" class="fields" onclick="createCourse()">Create Course</button>
+                </div>
+
+            </form> 
+            <div id="courses"></div>
+        </div>
+</body>
+</html>

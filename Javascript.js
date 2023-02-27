@@ -1,8 +1,8 @@
-// const value = [];
-// for (let i = 0; i < 10; i++) {
-//   const number = prompt(`Add a number ${i + 1}:`);
-//   value.push(parseFloat(number));
-// }
+const value = [];
+for (let i = 0; i < 10; i++) {
+  const number = prompt(`Add a number ${i + 1}:`);
+  value.push(parseFloat(number));
+}
 
 function mergeSort(array) {
   //if the array is empty or contain 1 element, so it is sorted
@@ -169,9 +169,10 @@ function getIpAddress() {
   };
   xhr.send();
 }
-
-
-
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 
 
